@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="doNhietDo()">Đo Nhiệt Độ</button>
+    <script>
+        function doNhietDo(){
+            let n= prompt("Nhập nhệt độ (20 <= n <= 100): ");
+            while(n<20 || n>100){
+                if(n<20){
+                    alert("Nhiệt độ quá thấp, bạn phải tăng nhiệt độ lên !!!")
+                    n=prompt("Nhập lại nhiệt độ (20 <= n <= 100): ")
+                }
+                else if(n>100){
+                    alert("Nhiệt độ của bạn quá cao, bạn phải giảm nhiệt độ lại !!!")
+                    n=prompt("Nhập lại nhiệt độ (20 <= n <= 100): ")
+                }
+            }
+            alert("Nhiệt độ thich hợp ^^");
+        }
+    </script>
+</body>
+</html>
