@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let num= prompt("Nhập số fibonaci muốn hiển thị : ");
-        let i=0, f0=0, f1=1,fn,tong;
-        while(i<=num){
-                fn=f0+f1;
-                if(fn%7==0){
-                    tong+=fn;
-                }
-                f0=f1;
-                f1=fn;
-                i++;
+        let i = 1, count = 0, temp=0;
+        while (count<30){
+            if(i%7==0){
+                count++;
+                temp+=i;
+            }
+            i++;
         }
-        console.log("Tổng "+num+ " số đầu của dãy fibonacci chia hết cho 7 là: "+ fn)
+        console.log(temp);
     </script>
 </body>
+
 </html>
